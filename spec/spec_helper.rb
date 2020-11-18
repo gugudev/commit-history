@@ -13,6 +13,15 @@
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+require 'webmock/rspec'
+
+require 'vcr'
+VCR.configure do |c|
+  c.configure_rspec_metadata!
+  c.cassette_library_dir = 'spec/vcr'
+  c.hook_into :webmock
+end
+
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest

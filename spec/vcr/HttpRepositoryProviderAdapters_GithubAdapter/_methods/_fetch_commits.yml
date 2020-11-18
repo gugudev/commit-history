@@ -1,0 +1,84 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/repos/gugudev/commit-history/commits
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 18 Nov 2020 19:33:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Status:
+      - 200 OK
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Accept-Encoding, Accept, X-Requested-With
+      Etag:
+      - W/"58985ca40f3b3170dd5a1fac23c46a8c4fcd71bf182e39e2e5b839b354dbbd2c"
+      Last-Modified:
+      - Wed, 18 Nov 2020 17:05:49 GMT
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+        X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '54'
+      X-Ratelimit-Reset:
+      - '1605729496'
+      X-Ratelimit-Used:
+      - '6'
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '1567'
+      X-Github-Request-Id:
+      - 4268:4506:1879E66:2A0BF45:5FB576EB
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"sha":"1a0c2ad5cf1f811564f9c883051ee6e1818eeacf","node_id":"MDY6Q29tbWl0MzEzOTc3NTAzOjFhMGMyYWQ1Y2YxZjgxMTU2NGY5Yzg4MzA1MWVlNmUxODE4ZWVhY2Y=","commit":{"author":{"name":"Gustavo
+        Fe","email":"gugudeveloper@gmail.com","date":"2020-11-18T17:05:49Z"},"committer":{"name":"Gustavo
+        Fe","email":"gugudeveloper@gmail.com","date":"2020-11-18T17:05:49Z"},"message":"Initial
+        commit of rails project","tree":{"sha":"a14739696152d203920eea4f541ac75dc7a6ed2c","url":"https://api.github.com/repos/gugudev/commit-history/git/trees/a14739696152d203920eea4f541ac75dc7a6ed2c"},"url":"https://api.github.com/repos/gugudev/commit-history/git/commits/1a0c2ad5cf1f811564f9c883051ee6e1818eeacf","comment_count":0,"verification":{"verified":false,"reason":"unsigned","signature":null,"payload":null}},"url":"https://api.github.com/repos/gugudev/commit-history/commits/1a0c2ad5cf1f811564f9c883051ee6e1818eeacf","html_url":"https://github.com/gugudev/commit-history/commit/1a0c2ad5cf1f811564f9c883051ee6e1818eeacf","comments_url":"https://api.github.com/repos/gugudev/commit-history/commits/1a0c2ad5cf1f811564f9c883051ee6e1818eeacf/comments","author":{"login":"gugudev","id":54562538,"node_id":"MDQ6VXNlcjU0NTYyNTM4","avatar_url":"https://avatars1.githubusercontent.com/u/54562538?v=4","gravatar_id":"","url":"https://api.github.com/users/gugudev","html_url":"https://github.com/gugudev","followers_url":"https://api.github.com/users/gugudev/followers","following_url":"https://api.github.com/users/gugudev/following{/other_user}","gists_url":"https://api.github.com/users/gugudev/gists{/gist_id}","starred_url":"https://api.github.com/users/gugudev/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/gugudev/subscriptions","organizations_url":"https://api.github.com/users/gugudev/orgs","repos_url":"https://api.github.com/users/gugudev/repos","events_url":"https://api.github.com/users/gugudev/events{/privacy}","received_events_url":"https://api.github.com/users/gugudev/received_events","type":"User","site_admin":false},"committer":{"login":"gugudev","id":54562538,"node_id":"MDQ6VXNlcjU0NTYyNTM4","avatar_url":"https://avatars1.githubusercontent.com/u/54562538?v=4","gravatar_id":"","url":"https://api.github.com/users/gugudev","html_url":"https://github.com/gugudev","followers_url":"https://api.github.com/users/gugudev/followers","following_url":"https://api.github.com/users/gugudev/following{/other_user}","gists_url":"https://api.github.com/users/gugudev/gists{/gist_id}","starred_url":"https://api.github.com/users/gugudev/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/gugudev/subscriptions","organizations_url":"https://api.github.com/users/gugudev/orgs","repos_url":"https://api.github.com/users/gugudev/repos","events_url":"https://api.github.com/users/gugudev/events{/privacy}","received_events_url":"https://api.github.com/users/gugudev/received_events","type":"User","site_admin":false},"parents":[{"sha":"8618ad41ad324d0cf18689c33beaf41523cffeb7","url":"https://api.github.com/repos/gugudev/commit-history/commits/8618ad41ad324d0cf18689c33beaf41523cffeb7","html_url":"https://github.com/gugudev/commit-history/commit/8618ad41ad324d0cf18689c33beaf41523cffeb7"}]},{"sha":"8618ad41ad324d0cf18689c33beaf41523cffeb7","node_id":"MDY6Q29tbWl0MzEzOTc3NTAzOjg2MThhZDQxYWQzMjRkMGNmMTg2ODljMzNiZWFmNDE1MjNjZmZlYjc=","commit":{"author":{"name":"Gustavo
+        Fe","email":"54562538+gugudev@users.noreply.github.com","date":"2020-11-18T15:32:04Z"},"committer":{"name":"GitHub","email":"noreply@github.com","date":"2020-11-18T15:32:04Z"},"message":"Initial
+        commit","tree":{"sha":"b98f8b18fc9309d7e0c1b6b9f67a7876929d448c","url":"https://api.github.com/repos/gugudev/commit-history/git/trees/b98f8b18fc9309d7e0c1b6b9f67a7876929d448c"},"url":"https://api.github.com/repos/gugudev/commit-history/git/commits/8618ad41ad324d0cf18689c33beaf41523cffeb7","comment_count":0,"verification":{"verified":true,"reason":"valid","signature":"-----BEGIN
+        PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJftT50CRBK7hj4Ov3rIwAAdHIIACiNBtiGEVC4/wxUGvP2a6iv\nANjhDCAM443q7N9lDzemF7MK2H9u0PvPRpiXD+82mix4N/x5P56qyFe/bH/KTs8j\nS3kxzYMcMHQtV/yXNgp1yGggduysAxHI45sk0fTVOqeZ3A0lJeQVIavA6R2aeOTI\nxtta7yvF/F5sEKOztPVS1gyEzi8jN4cT7NiBXPuSen5OzKcooWw+Dz/jxtGN/6BY\nwUgDbRg+G17p0TXcUYmPF2T9GrJ4zXxIwhnoc+C5/oErKTJozI5gdZoXKul2QXxd\nxcK7MSQAp7274GNWC9RDS3947/81KytpMHzaNBaDAoKFMzzrmdXJOcGc7533ZrU=\n=DFRD\n-----END
+        PGP SIGNATURE-----\n","payload":"tree b98f8b18fc9309d7e0c1b6b9f67a7876929d448c\nauthor
+        Gustavo Fe <54562538+gugudev@users.noreply.github.com> 1605713524 -0300\ncommitter
+        GitHub <noreply@github.com> 1605713524 -0300\n\nInitial commit"}},"url":"https://api.github.com/repos/gugudev/commit-history/commits/8618ad41ad324d0cf18689c33beaf41523cffeb7","html_url":"https://github.com/gugudev/commit-history/commit/8618ad41ad324d0cf18689c33beaf41523cffeb7","comments_url":"https://api.github.com/repos/gugudev/commit-history/commits/8618ad41ad324d0cf18689c33beaf41523cffeb7/comments","author":{"login":"gugudev","id":54562538,"node_id":"MDQ6VXNlcjU0NTYyNTM4","avatar_url":"https://avatars1.githubusercontent.com/u/54562538?v=4","gravatar_id":"","url":"https://api.github.com/users/gugudev","html_url":"https://github.com/gugudev","followers_url":"https://api.github.com/users/gugudev/followers","following_url":"https://api.github.com/users/gugudev/following{/other_user}","gists_url":"https://api.github.com/users/gugudev/gists{/gist_id}","starred_url":"https://api.github.com/users/gugudev/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/gugudev/subscriptions","organizations_url":"https://api.github.com/users/gugudev/orgs","repos_url":"https://api.github.com/users/gugudev/repos","events_url":"https://api.github.com/users/gugudev/events{/privacy}","received_events_url":"https://api.github.com/users/gugudev/received_events","type":"User","site_admin":false},"committer":{"login":"web-flow","id":19864447,"node_id":"MDQ6VXNlcjE5ODY0NDQ3","avatar_url":"https://avatars3.githubusercontent.com/u/19864447?v=4","gravatar_id":"","url":"https://api.github.com/users/web-flow","html_url":"https://github.com/web-flow","followers_url":"https://api.github.com/users/web-flow/followers","following_url":"https://api.github.com/users/web-flow/following{/other_user}","gists_url":"https://api.github.com/users/web-flow/gists{/gist_id}","starred_url":"https://api.github.com/users/web-flow/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/web-flow/subscriptions","organizations_url":"https://api.github.com/users/web-flow/orgs","repos_url":"https://api.github.com/users/web-flow/repos","events_url":"https://api.github.com/users/web-flow/events{/privacy}","received_events_url":"https://api.github.com/users/web-flow/received_events","type":"User","site_admin":false},"parents":[]}]'
+  recorded_at: Wed, 18 Nov 2020 19:33:00 GMT
+recorded_with: VCR 6.0.0
