@@ -2,6 +2,7 @@ module HttpRepositoryProviderAdapters
 
   class GithubAdapter < AbstractAdapter
     URL_API = 'https://api.github.com'
+    URL_SITE = 'https://github.com'
 
     def initialize(repository_name, config = {})
       @repository_name = repository_name
@@ -31,12 +32,17 @@ module HttpRepositoryProviderAdapters
           commit_json[:commit][:message],
           commit_json[:commit][:author][:name],
           commit_json[:commit][:author][:email],
-          commit_json[:commit][:author][:date]
+          commit_json[:commit][:author][:date],
+          url_link_commit_by_sha(commit_json[:sha])
         )
 
       end
 
       Wrappers::RepositoryWrapper.new(@repository_name, commits)
+    end
+
+    def url_link_commit_by_sha(sha)
+      URL_SITE + "/#{@repository_name}/commit/#{sha}"
     end
 
   end
